@@ -27,10 +27,15 @@ body {
     }
 }
 
+@media screen and (min-height: 950px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
 .titulo {    
     letter-spacing: 0.125rem;
-    font-size: 2.2rem;
-    text-shadow: -0.125rem 0 1rem rgba(156, 150, 150, 1);
+    font-size: 2rem;    
 }
 
 #contenedor-botones {
@@ -57,8 +62,7 @@ span.puntaje {
 }
 
 .carta {
-    position: relative;
-    height: 15rem;
+    position: relative;    
     left: 6rem;
     margin-left: -5rem;
 }

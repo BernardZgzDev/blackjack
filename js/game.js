@@ -144,6 +144,7 @@ const askCard = ( who ) => {
     const imgNode = document.createElement('img');
     
     imgNode.src = `assets/cards/${card}.png`;
+    imgNode.height = '240';
     imgNode.classList.add('carta');
 
     element.append(imgNode);
