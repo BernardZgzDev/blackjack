@@ -192,10 +192,15 @@ const turnoComputadora = () => {
     do {
         askCard( 'computer-deck' );
 
+        if( puntosJugador === 21 && puntosComputadora === 21 ) {
+            state = 'tie';
+            break;            
+        }
+
         if( puntosJugador > 21 || ( puntosComputadora > puntosJugador && puntosComputadora <= 21 ) ) {
             state = 'lost';
             break;            
-        }
+        }        
 
         if (puntosComputadora > 21 ) {
             state = 'won';
@@ -216,7 +221,7 @@ const turnoComputadora = () => {
                 icon: "success",                
             });
         
-        } else {
+        } else if ( state === 'lost') {
 
             swal({
                 title: "Bad news !",
@@ -224,6 +229,13 @@ const turnoComputadora = () => {
                 icon: "error",                
             });
 
+        } else {
+
+            swal({
+                title: "Oh my god !!!",                
+                text: "You both got 21. It's a tie",
+                icon: "info",                                
+            });
         }
         
     }, 100 );
