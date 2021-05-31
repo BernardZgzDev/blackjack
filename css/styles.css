@@ -42,3 +42,16 @@ span.puntaje {
     left: 6rem;
     margin-left: -5rem;
 }
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+a#source-code {
+    text-decoration: none;
+}
+
+a#source-code:hover {
+    font-weight: 600;
+}
