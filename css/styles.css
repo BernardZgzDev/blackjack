@@ -53,7 +53,7 @@ span.puntaje {
 }
 
 #player-deck, #computer-deck {
-    height: 15.5rem;
+    height: 15.5rem;    
 }
 
 .carta {
@@ -75,7 +75,7 @@ footer {
     position: absolute;
     display: inline-block;
     width: 100%;    
-    bottom: 0;
+    bottom: 0;    
 }
 
 
