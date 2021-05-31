@@ -1,0 +1,44 @@
+:root {
+    --verde-primario: #2F4F30;
+}
+
+html, body {
+    background-color: var(--verde-primario);
+    font-size: 16px;;
+}
+
+.titulo {    
+    letter-spacing: 0.125rem;
+    font-size: 2.2rem;
+    text-shadow: -0.125rem 0 1rem rgba(156, 150, 150, 1);
+}
+
+#contenedor-botones {
+    margin-top: 2.4rem;
+}
+
+.botones {
+    min-width:7rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+.jugador-nombre {
+    font-size: 2rem;
+}
+span.puntaje {
+    font-size: 2rem;
+    margin-left: 1rem;    
+}
+
+#player-deck, #computer-deck {
+    height: 15.5rem;
+}
+
+.carta {
+    position: relative;
+    height: 15rem;
+    left: 6rem;
+    margin-left: -5rem;
+}
