@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
-    
+        
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -36,7 +36,7 @@
                 <h1 class="jugador-nombre text-white mt-4 ms-3">You:<span class="puntaje" id="player-points"></span></h1>
                 <hr class="d-lg-none text-white mt-0"/>
 
-                <div class="mt-4" id="player-deck">
+                <div class="div-cartas-jugadores mt-4" id="player-deck">
                     
                 </div>
             </div>
@@ -45,7 +45,7 @@
                 <h1 class="jugador-nombre text-white mt-4 ms-3">Computer:<span class="puntaje" id="computer-points"></span></h1>
                 <hr class="d-lg-none text-white mt-0"/>
 
-                <div class="mt-4" id="computer-deck">
+                <div class="div-cartas-jugadores mt-4" id="computer-deck">
                     
                 </div>
             </div>
@@ -70,6 +70,8 @@
     <script src="js/underscore-umd-min.js"></script>
     <script src="js/sweet-alert.js"></script>
     <script src="js/game.js"></script>
+    
+    <script>blackjackGame.initGame()</script>
     
 </body>
 </html>
